@@ -144,6 +144,42 @@
       "latest": "2021-09-19T18:47:11.750Z",
       "celsius": 16.82,
       "pressureHpa": 1033
+    },
+    {
+      "id": "eb78dda0-198e-11ec-9c3b-292d4eb09b2c",
+      "userid": "3e8f4440-1974-11ec-a264-bf7665512721",
+      "name": "Lubin",
+      "latitude": 22.22222,
+      "longitude": 22.222222,
+      "readings": [
+        {
+          "id": "f4b8b980-198e-11ec-9c3b-292d4eb09b2c",
+          "code": 100,
+          "temperature": 22.3,
+          "windSpeed": 11.8,
+          "pressure": 1900,
+          "windDirection": 100,
+          "time": "2021-09-19T21:17:12.344Z"
+        }
+      ],
+      "weatherType": "Clear",
+      "celsius": 22.3,
+      "fahrenheit": "72.00",
+      "windTemp": "10.76",
+      "minimumTemperature": 22.3,
+      "maximumTemperature": 22.3,
+      "temperatureTrend": "No Temp Trend",
+      "windBeaufort": "Beaufort 3 (Gentle Breeze)",
+      "windDirect": "East",
+      "minimumWind": 11.8,
+      "maximumWind": 11.8,
+      "windTrend": "No Wind Trend",
+      "pressureHpa": 1900,
+      "minimumPressure": 1900,
+      "maximumPressure": 1900,
+      "pressureTrend": "No Pressure Trend",
+      "latestReading": "2021-09-19T21:17:12.344Z",
+      "latest": "2021-09-19T21:17:12.345Z"
     }
   ]
 }
