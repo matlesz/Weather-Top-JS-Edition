@@ -1,0 +1,84 @@
+{{#each stations}}
+  <section class="ui stacked segment">
+    <table class="ui celled padded table">
+      <thead class="ui inverted teal header">
+      <tr>
+        <th class= "ui inverted header">Station Details</th>
+        <th class="twelve wide">Weather Details</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <h2 class="ui header">
+            {{name}}
+          </h2>
+          <h4 class="ui header">
+            Latitude: {{latitude}}
+          </h4>
+          <h4 class="ui header">
+            Longitude: {{longitude}}
+          </h4>
+          <p> Latest Reading: {{latestReading}} </p>
+          <a href="/stations/{{id}}" class="ui icon button">
+            <i class="icon folder open"></i>
+          </a>
+          <a href="/dashboard/deletestation/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+        <td>
+          <div class="ui four column grid">
+            <div class="column">
+              <img class="ui small centered image" src="https://weather-top-v4.glitch.me/images/weather.png">
+              <h2 class="ui purple header">
+                Weather
+              </h2>
+              <h4>{{weatherType}}</h4>
+              <img class="ui tiny centered image" src="https://weather-top-v4.glitch.me/images/weather/{{weatherType}}.png" }>
+            </div>
+            <div class="column">
+              <img class="ui small centered image" src="https://weather-top-v4.glitch.me/images/temperature.png">
+              <h2 class="ui blue header">
+                Temperature
+              </h2>
+              <h4>{{celsius}} Celsius</h4>
+              <h4>{{fahrenheit}} Fahrenheit</h4>
+              <h4>Min Temp: {{minimumTemperature}} Celsius</h4>
+              <h4>Max Temp: {{maximumTemperature}} Celsius</h4>
+              <h4>{{temperatureTrend}}</h4>
+              <img class="ui tiny centered image" src="https://weather-top-v4.glitch.me/images/trends/{{temperatureTrend}}.png">
+            </div>
+            <div class="column">
+              <img class="ui small centered image" src="https://weather-top-v4.glitch.me/images/wind.png">
+              <h2 class="ui red header">
+                Wind
+              </h2>
+              <h4>{{windBeaufort}}</h4>
+              <h4>{{windDirect}}</h4>
+              <img class="ui tiny centered image" src="https://weather-top-v4.glitch.me/images/direction/{{windDirect}}.png">
+              <h4>Feels like {{windTemp}} Celsius</h4>
+              <h4>Min Wind: {{minimumWind}} km/hr</h4>
+              <h4>Max Wind: {{maximumWind}} km/hr</h4>
+              <h4>{{windTrend}}</h4>
+              <img class="ui tiny centered image" src="https://weather-top-v4.glitch.me/images/trends/{{windTrend}}.png">
+            </div>
+            <div class="column">
+              <img class="ui small centered image" src="https://weather-top-v4.glitch.me/images/pressure.png">
+              <h2 class="ui pink header">
+                Pressure
+              </h2>
+              <h4>{{pressureHpa}} hPa</h4>
+              <h4>Min Pressure: {{minimumPressure}} hPa</h4>
+              <h4>Max Pressure: {{maximumPressure}} hPa</h4>
+              <h4>{{pressureTrend}}</h4>
+              <img class="ui tiny centered image" src="https://weather-top-v4.glitch.me/images/trends/{{pressureTrend}}.png">
+            </div>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+{{/each}}
+
