@@ -1,7 +1,7 @@
 {
-  "name": "glitch-template",
+  "name": "Weather-Top-JS-Edition",
   "version": "0.0.1",
-  "description": "Starter project for learning glitch and express",
+  "description": "Simple web app for weather readings management",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -20,7 +20,7 @@
     "winston": "^3.3.3"
   },
   "repository": {
-    "url": "https://github.com/wit-hdip-comp-sci-2021/glitch-template"
+    "url": "https://github.com/matlesz/Weather-Top-JS-Edition"
   },
   "license": "MIT",
   "keywords": [

@@ -1,0 +1,73 @@
+{{> menu id="profile"}}
+
+<section class="ui segment ">
+  <div class="ui two column grid">
+    <div class="four wide column">
+      <img class="ui image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fhades%2Fimages%2F6%2F64%2FHades.png%2Frevision%2Flatest%3Fcb%3D20200818212532%26path-prefix%3Dru&f=1&nofb=1">
+    </div>
+    <div class="twelve wide column">
+      <table class="ui fixed table">
+        <thead>
+        <tr>
+          <th>Details</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <h2>First Name: </h2>  <h4>{{firstName}}</h4>
+          </td>
+          <td>
+            <form class="ui stacked segment form" action="/profile/updatefirstname"  method="POST">
+              <div class="field">
+                <input placeholder="First Name" type="text" name="firstName">
+              </div>
+              <button class="ui blue submit button">Update First Name</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Last Name: </h2> <h4>{{lastName}}</h4>
+          </td>
+          <td>
+            <form class="ui stacked segment form" action="/profile/updatelastname"  method="POST">
+              <div class="field">
+                <input placeholder="Last Name" type="text" name="lastName">
+              </div>
+              <button class="ui blue submit button">Update Last Name</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Email:</h2>  <h4>{{email}}</h4>
+          </td>
+          <td>
+            <form class="ui stacked segment form" action="/profile/updateemail"  method="POST">
+              <div class="field">
+                <input placeholder="Email" type="text" name="email">
+              </div>
+              <button class="ui blue submit button">Update Email</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Password:</h2>  <h4>{{password}}</h4>
+          </td>
+          <td>
+            <form class="ui stacked segment form" action="/profile/updatepassword"  method="POST">
+              <div class="field">
+                <input placeholder="Password" type="text" name="password">
+              </div>
+              <button class="ui blue submit button">Update Password</button>
+            </form>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
