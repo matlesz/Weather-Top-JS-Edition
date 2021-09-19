@@ -1,0 +1,170 @@
+{{> menu}}
+
+<section class="ui segment ">
+  <div class="ui five column grid">
+    <div class="black column">
+      <h1>
+        {{station.name}}
+      </h1>
+      <h3>
+        Latitude: {{station.latitude}}
+      </h3>
+      <h3>
+        Longitude: {{station.longitude}}
+      </h3>
+    </div>
+    <div class="column">
+      <img class="ui small centered image" src="../images/weather.png">
+      <h2 class="ui purple header">
+        Weather
+      </h2>
+      <h4>{{weatherType}}</h4>
+      <img class="ui tiny centered image" src="../images/weather/{{weatherType}}.png" }>
+    </div>
+    <div class="column">
+      <img class="ui small centered image" src="../images/temperature.png">
+      <h2 class="ui blue header">
+        Temperature
+      </h2>
+      <h4>{{celsius}} Celsius</h4>
+      <h4>{{fahrenheit}} Fahrenheit</h4>
+      <h4>Min Temp: {{minimumTemperature}} Celsius</h4>
+      <h4>Max Temp: {{maximumTemperature}} Celsius</h4>
+      <h4>{{temperatureTrend}}</h4>
+      <img class="ui tiny centered image" src="../images/trends/{{temperatureTrend}}.png">
+    </div>
+    <div class="column">
+      <img class="ui small centered image" src="../images/wind.png">
+      <h2 class="ui red header">
+        Wind
+      </h2>
+      <h4>{{windBeaufort}}</h4>
+      <h4>{{windDirect}}</h4>
+      <img class="ui tiny centered image" src="../images/direction/{{windDirect}}.png">
+      <h4>Feels like {{windTemp}} Celsius</h4>
+      <h4>Min Wind: {{minimumWind}} km/hr</h4>
+      <h4>Max Wind: {{maximumWind}} km/hr</h4>
+      <h4>{{windTrend}}</h4>
+      <img class="ui tiny centered image" src="../images/trends/{{windTrend}}.png">
+    </div>
+    <div class="column">
+      <img class="ui small centered image" src="../images/pressure.png">
+      <h2 class="ui pink header">
+        Pressure
+      </h2>
+      <h4>{{pressureHpa}} hPa</h4>
+      <h4>Min Pressure: {{minimumPressure}} hPa</h4>
+      <h4>Max Pressure: {{maximumPressure}} hPa</h4>
+      <h4>{{pressureTrend}}</h4>
+      <img class="ui tiny centered image" src="../images/trends/{{pressureTrend}}.png">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ui segment" id="chart"></div>
+  <script>
+    const data = {
+      labels: [
+        {{#each reading.trendLabelsTemp}}
+          "{{this}}",
+        {{/each}}
+      ],
+      datasets: [
+        {
+          name: "Temperature", type: "line",
+          values: [
+            {{#each reading.tempTrend}}
+              {{this}},
+            {{/each}}
+          ]
+        }
+      ]
+    }
+
+    const chart = new frappe.Chart("#chart", {
+      title: "Temperature Trend (Celsius)",
+      data: data,
+      type: 'line',
+      height: 250,
+    })
+
+  </script>
+</section>
+
+<section>
+  <div class="ui segment" id="chart1"></div>
+  <script>
+
+    const data1 = {
+      labels: [
+        {{#each reading.trendLabelsWind}}
+          "{{this}}",
+        {{/each}}
+      ],
+      datasets: [
+        {
+          name: "Wind", type: "bar",
+          values: [
+            {{#each reading.windyTrend}}
+              {{this}},
+            {{/each}}
+          ]
+        }
+      ]
+    }
+
+    const chart1 = new frappe.Chart("#chart1", {
+      title: "Wind Trend (km/hr)",
+      data: data1,
+      type: 'bar',
+      height: 250,
+    })
+
+
+  </script>
+</section>
+
+<section>
+  <div class="ui segment" id="chart2"></div>
+  <script>
+
+    const data2 = {
+      labels: [
+        {{#each reading.trendLabelsPress}}
+          "{{this}}",
+        {{/each}}
+      ],
+      datasets: [
+        {
+          name: "Pressure", type: "bar",
+          values: [
+            {{#each reading.pressTrend}}
+              {{this}},
+            {{/each}}
+          ]
+        }
+      ]
+    }
+
+    const chart2 = new frappe.Chart("#chart2", {
+      title: "Pressure Trend (Pa)",
+      data: data2,
+      type: 'bar',
+      height: 250,
+    })
+
+
+  </script>
+</section>
+
+
+
+<section class="ui inverted blue segment">
+  <h2 class="ui header">
+    {{station.name}}
+  </h2>
+  <h4> Latest Reading: {{latestReading}}</h4>
+  {{> listreadings}}
+  {{> addreading}}
+</section>
