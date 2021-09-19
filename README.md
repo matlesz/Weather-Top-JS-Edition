@@ -1,7 +1,19 @@
-Welcome to the Glitch Template
-==============================
 
-A starter project for learning Glitch.
+# Welcome to the Weather Top JS Edition
 
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing, JSON based model and session support.
+Weather Top JS Edition is a comprehensive webapp for weather readings management.
 
+## Features
+
+- Creating users;
+- Session managementl
+- Creating an deleting stations with proper geographical coordinates;
+- Creating and deleting readings to each station;
+- Automatically generating trends for temperature, wind and pressure;
+
+  
+## Authors
+Mateusz Leszkiewicz
+- [@matlesz](https://github.com/matlesz/)
+
+  
