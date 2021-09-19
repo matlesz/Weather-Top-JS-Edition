@@ -1,0 +1,149 @@
+{
+  "stationsCollection": [
+    {
+      "id": "01",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Tramore",
+      "latitude": 52.16,
+      "longitude": -7.152,
+      "readings": [
+        {
+          "id": "c8c8e8c0-f244-11eb-bffc-4b0a2167c5ab",
+          "code": 400,
+          "temperature": 4,
+          "windSpeed": 12,
+          "pressure": 800,
+          "windDirection": 12,
+          "time": "2021-07-31T21:18:00.524Z"
+        },
+        {
+          "id": "9cbb7c10-f245-11eb-8e84-39e17ba23f18",
+          "code": 400,
+          "temperature": 4,
+          "windSpeed": 3,
+          "pressure": 800,
+          "windDirection": 300,
+          "time": "2021-07-31T21:23:56.113Z"
+        },
+        {
+          "id": "f7750a40-f245-11eb-8e84-39e17ba23f18",
+          "code": 800,
+          "temperature": 32,
+          "windSpeed": 8,
+          "pressure": 800,
+          "windDirection": 12,
+          "time": "2021-07-31T21:26:28.324Z"
+        },
+        {
+          "id": "52978c90-f85e-11eb-8518-c38a1324b616",
+          "code": 500,
+          "temperature": 4,
+          "windSpeed": 4,
+          "pressure": 1200,
+          "windDirection": 12,
+          "time": "2021-08-08T15:35:56.122Z"
+        },
+        {
+          "id": "56f85930-f85f-11eb-8518-c38a1324b616",
+          "code": 400,
+          "temperature": 32,
+          "windSpeed": 20,
+          "pressure": 700,
+          "windDirection": 50,
+          "time": "2021-08-08T15:43:12.963Z"
+        }
+      ],
+      "temperature": 78,
+      "latest": "2021-09-01T12:02:26.361Z",
+      "weatherType": "Light Showers",
+      "latestReading": "2021-08-08T15:43:12.963Z",
+      "celsius": 32,
+      "fahrenheit": "90.00",
+      "windTemp": "15.34",
+      "minimumTemperature": 4,
+      "maximumTemperature": 32,
+      "temperatureTrend": "No Temp Trend",
+      "windBeaufort": "Beaufort 4 (Moderate Breeze)",
+      "windDirect": "North East",
+      "minimumWind": 3,
+      "maximumWind": 20,
+      "windTrend": "No Wind Trend",
+      "pressureHpa": 700,
+      "minimumPressure": 700,
+      "maximumPressure": 1200,
+      "pressureTrend": "No Pressure Trend"
+    },
+    {
+      "id": "05",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dunmore",
+      "latitude": 52.149,
+      "longitude": -6.994,
+      "readings": [
+        {
+          "id": "b2b20ca0-0b13-11ec-8912-478d08e0f15c",
+          "code": 803,
+          "temperature": 16.18,
+          "windSpeed": 5.14,
+          "pressure": 1033,
+          "windDirection": 130,
+          "time": "2021-09-01T10:59:37.194Z"
+        },
+        {
+          "id": "e949e120-0b13-11ec-8912-478d08e0f15c",
+          "code": 803,
+          "temperature": 16.18,
+          "windSpeed": 5.14,
+          "pressure": 1033,
+          "windDirection": 130,
+          "time": "2021-09-01T11:01:08.786Z"
+        },
+        {
+          "id": "de91a3d0-0b18-11ec-885a-85e23148a11f",
+          "code": 803,
+          "temperature": 16.28,
+          "windSpeed": 5.14,
+          "pressure": 1033,
+          "windDirection": 130,
+          "time": "2021-09-01T11:36:38.286Z"
+        },
+        {
+          "id": "fb987290-0b1a-11ec-a1a8-67026815606b",
+          "code": 803,
+          "temperature": 16.43,
+          "windSpeed": 4.63,
+          "pressure": 1033,
+          "windDirection": 110,
+          "time": "2021-09-01T11:51:45.978Z"
+        },
+        {
+          "id": "764737b0-0b2f-11ec-9807-f7aee4efcce1",
+          "code": 803,
+          "temperature": 16.82,
+          "windSpeed": 5.14,
+          "pressure": 1033,
+          "windDirection": 100,
+          "time": "2021-09-01T14:18:21.765Z"
+        }
+      ],
+      "weatherType": "Thunder",
+      "fahrenheit": "62.00",
+      "windTemp": "9.42",
+      "minimumTemperature": 16.18,
+      "maximumTemperature": 16.82,
+      "temperatureTrend": "Increasing Temp Trend",
+      "windBeaufort": "Beaufort 2 (Light Breeze)",
+      "windDirect": "East",
+      "minimumWind": 4.63,
+      "maximumWind": 5.14,
+      "windTrend": "No Wind Trend",
+      "minimumPressure": 1033,
+      "maximumPressure": 1033,
+      "pressureTrend": "No Pressure Trend",
+      "latestReading": "2021-09-01T14:18:21.765Z",
+      "latest": "2021-09-19T18:47:11.750Z",
+      "celsius": 16.82,
+      "pressureHpa": 1033
+    }
+  ]
+}
